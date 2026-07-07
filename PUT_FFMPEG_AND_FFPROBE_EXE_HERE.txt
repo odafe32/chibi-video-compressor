@@ -1,0 +1,4 @@
+Put ffmpeg.exe and ffprobe.exe (Windows builds) in this folder before running installer.iss.
+
+Download: https://www.gyan.dev/ffmpeg/builds/  -> "release essentials" zip
+Inside the zip's bin\ folder you'll find ffmpeg.exe and ffprobe.exe - copy both here.

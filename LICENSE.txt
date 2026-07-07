@@ -1,0 +1,244 @@
+================================================================================
+                          CHIBI — END USER LICENSE AGREEMENT
+================================================================================
+
+Copyright (c) 2026 Godfrey Joseph Sule. All rights reserved.
+
+This End User License Agreement ("Agreement") is a legal agreement between you
+("You" or "Licensee") and Godfrey Joseph Sule ("Licensor") governing the use of
+the Chibi video compression software application, including all accompanying
+documentation and associated media (collectively, the "Software").
+
+IMPORTANT — READ CAREFULLY
+
+By installing, copying, or otherwise using the Software, You acknowledge that
+You have read this Agreement, understand it, and agree to be bound by its terms
+and conditions. If You do not agree to these terms, do not install, copy, or use
+the Software, and promptly delete or destroy all copies in Your possession.
+
+--------------------------------------------------------------------------------
+
+1. DEFINITIONS
+
+   1.1 "Software" means the Chibi application, including all
+       executable code, source code, documentation, and any updates or
+       modifications thereto.
+
+   1.2 "Licensor" means Godfrey Joseph Sule, the sole author and copyright
+       holder of the Software.
+
+   1.3 "Licensee" or "You" means the individual or entity that downloads,
+       installs, or uses the Software.
+
+   1.4 "Third-Party Components" means any open-source or independently licensed
+       software libraries or tools embedded in or distributed alongside the
+       Software.
+
+--------------------------------------------------------------------------------
+
+2. LICENSE GRANT
+
+   2.1 Grant of License. Licensor grants You a personal, worldwide,
+       non-exclusive, non-transferable, non-sublicensable, revocable license to
+       download, install, and use the Software on Your own personal devices or
+       devices within Your internal business environment, solely for personal or
+       internal business purposes, and at no charge.
+
+   2.2 Permitted Use. You may use the Software to compress, transcode, and
+       process video files for Your own personal use or for use within Your
+       organization. You may make a reasonable number of backup copies of the
+       Software solely for archival purposes.
+
+   2.3 Restrictions. You shall not, and shall not permit any third party to:
+       (a) modify, adapt, translate, or create derivative works of the Software;
+       (b) reverse engineer, decompile, disassemble, or otherwise attempt to
+           derive the source code of the Software, except to the extent that
+           such activity is expressly permitted by applicable law;
+       (c) remove, alter, or obscure any copyright, trademark, or other
+           proprietary rights notices contained in or on the Software;
+       (d) sell, rent, lease, lend, sublicense, assign, distribute, publish,
+           transfer, or otherwise make available the Software, in whole or in
+           part, to any third party for commercial gain;
+       (e) use the Software in any manner that violates applicable laws,
+           regulations, or third-party rights; or
+       (f) use the Software to process content that You do not have the lawful
+           right to access or modify.
+
+--------------------------------------------------------------------------------
+
+3. THIRD-PARTY COMPONENTS
+
+   3.1 FFmpeg and FFprobe. The Software embeds FFmpeg and FFprobe
+       (https://ffmpeg.org), which are licensed separately under the GNU Lesser
+       General Public License (LGPL) and/or the GNU General Public License (GPL).
+       The source code for these components is available at
+       https://ffmpeg.org/download.html. The applicable license terms governing
+       FFmpeg and FFprobe can be found at https://ffmpeg.org/legal.html.
+
+   3.2 Independent Obligations. Your use of FFmpeg and FFprobe is subject to the
+       terms and conditions of their respective licenses. Nothing in this
+       Agreement overrides or supersedes the obligations imposed by those
+       licenses. You are independently responsible for compliance with all
+       applicable third-party license terms.
+
+   3.3 Additional Components. The Software may incorporate additional
+       third-party libraries, each governed by its own license. A list of such
+       components and their licenses is provided in the accompanying
+       documentation or within the Software's installation directory.
+
+--------------------------------------------------------------------------------
+
+4. INTELLECTUAL PROPERTY RIGHTS
+
+   4.1 Ownership. The Software is licensed, not sold. Licensor retains all
+       right, title, and interest in and to the Software, including all
+       intellectual property rights therein. This Agreement does not grant You
+       any rights to the Software other than as expressly set forth in Section 2.
+
+   4.2 Reservation of Rights. All rights not expressly granted to You in this
+       Agreement are reserved by Licensor. No implied licenses are granted
+       under this Agreement.
+
+   4.3 Feedback. If You provide Licensor with any suggestions, comments, ideas,
+       or feedback regarding the Software (collectively, "Feedback"), You grant
+       Licensor a perpetual, irrevocable, worldwide, royalty-free license to use
+       and incorporate such Feedback into the Software without obligation or
+       compensation to You.
+
+--------------------------------------------------------------------------------
+
+5. NO WARRANTY
+
+   5.1 "AS IS" Basis. THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE,"
+       WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+       PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+   5.2 No Guarantee of Performance. Licensor does not warrant that the Software
+       will operate error-free, uninterrupted, or that it will meet Your
+       specific requirements. The Software may not be compatible with all video
+       formats, codecs, or hardware configurations.
+
+   5.3 Risk of Use. You assume all risk associated with the use of the Software,
+       including but not limited to the risk of data loss, file corruption, or
+       damage to Your equipment. You are solely responsible for maintaining
+       adequate backups of all data and media files prior to using the Software.
+
+   5.4 No Support. Licensor is under no obligation to provide technical support,
+       updates, patches, or bug fixes for the Software, though Licensor may do so
+       at its sole discretion.
+
+--------------------------------------------------------------------------------
+
+6. LIMITATION OF LIABILITY
+
+   6.1 Exclusion of Damages. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
+       IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+       SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS,
+       REVENUE, DATA, OR USE, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS
+       AGREEMENT, WHETHER SUCH LIABILITY ARISES IN CONTRACT, TORT, NEGLIGENCE,
+       STRICT LIABILITY, OR OTHERWISE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE
+       POSSIBILITY OF SUCH DAMAGES.
+
+   6.2 Cap on Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE
+       TOTAL CUMULATIVE LIABILITY OF LICENSOR ARISING OUT OF OR RELATED TO THIS
+       AGREEMENT OR THE SOFTWARE SHALL NOT EXCEED THE AMOUNT PAID BY YOU FOR THE
+       SOFTWARE, WHICH IN THE CASE OF A FREE LICENSE IS ZERO DOLLARS ($0.00).
+
+   6.3 Acknowledgement. You acknowledge that the limitations and exclusions of
+       liability set forth in this Section 6 reflect a reasonable allocation of
+       risk between the parties and form an essential basis of the bargain
+       between You and Licensor.
+
+--------------------------------------------------------------------------------
+
+7. NO REDISTRIBUTION FOR COMMERCIAL GAIN
+
+   7.1 Prohibition. You may not sell, sublicense, rent, lease, lend, or
+       redistribute the Software, in whole or in part, for any commercial gain
+       or monetary compensation without the prior written consent of Licensor.
+
+   7.2 Permitted Sharing. You may share the Software with other individuals for
+       their personal, non-commercial use, provided that You distribute only the
+       original, unmodified installation package and that You do not charge any
+       fee for such distribution.
+
+--------------------------------------------------------------------------------
+
+8. PRIVACY AND DATA
+
+   8.1 Local Processing. The Software processes video files locally on Your
+       device. Licensor does not collect, store, or transmit any of Your
+       personal data or media files through the Software.
+
+   8.2 No Telemetry. The Software does not include any telemetry, analytics, or
+       tracking functionality. Your usage of the Software remains private and
+       confined to Your device.
+
+   8.3 Responsibility. You are solely responsible for the content You process
+       using the Software and for ensuring that Your use complies with all
+       applicable data protection and privacy laws.
+
+--------------------------------------------------------------------------------
+
+9. TERMINATION
+
+   9.1 Automatic Termination. This Agreement is effective upon Your installation
+       or use of the Software and remains in effect until terminated. It will
+       terminate automatically, without notice, if You fail to comply with any
+       of its terms or conditions.
+
+   9.2 Effect of Termination. Upon termination, You must immediately cease all
+       use of the Software and destroy or permanently erase all copies of the
+       Software in Your possession or under Your control. Sections 4, 5, 6, 7,
+       and 10 shall survive any termination of this Agreement.
+
+   9.3 No Refund Obligation. As the Software is provided free of charge, no
+       refund or compensation shall be owed to You upon termination.
+
+--------------------------------------------------------------------------------
+
+10. GENERAL PROVISIONS
+
+   10.1 Governing Law. This Agreement shall be governed by and construed in
+        accordance with the laws of the jurisdiction in which the Licensor
+        resides, without regard to its conflict of law principles.
+
+   10.2 Entire Agreement. This Agreement constitutes the entire agreement
+        between You and Licensor with respect to the Software and supersedes all
+        prior or contemporaneous understandings, whether oral or written.
+
+   10.3 Severability. If any provision of this Agreement is held to be invalid,
+        illegal, or unenforceable, the remaining provisions shall continue in
+        full force and effect.
+
+   10.4 Amendment. Licensor reserves the right to modify this Agreement at any
+        time. Any modifications will be effective upon posting of the revised
+        Agreement. Your continued use of the Software after such modification
+        constitutes acceptance of the updated terms.
+
+   10.5 Assignment. You may not assign or transfer this Agreement or any rights
+        hereunder without the prior written consent of Licensor. Licensor may
+        assign this Agreement freely.
+
+   10.6 Waiver. No waiver of any provision of this Agreement shall be effective
+        unless in writing and signed by Licensor. The failure of Licensor to
+        enforce any right or provision shall not constitute a waiver of such
+        right or provision in the future.
+
+   10.7 Headings. Section headings are for convenience only and shall not affect
+        the interpretation of this Agreement.
+
+   10.8 Contact. For questions regarding this Agreement or the Software, please
+        contact: Godfrey Joseph Sule.
+
+--------------------------------------------------------------------------------
+
+        BY INSTALLING OR USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE
+        READ THIS AGREEMENT, UNDERSTOOD IT, AND AGREE TO BE BOUND BY ITS
+        TERMS AND CONDITIONS. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE
+        THE SOFTWARE.
+
+================================================================================
+        Copyright (c) 2026 Godfrey Joseph Sule. All rights reserved.
+================================================================================

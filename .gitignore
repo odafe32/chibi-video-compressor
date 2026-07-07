@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Build artifacts
+build/
+dist/
+installer_output/
+*.exe
+!bin/*.exe
+
+# FFmpeg binaries (too large for git, users download separately)
+bin/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
