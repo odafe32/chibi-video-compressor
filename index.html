@@ -61,6 +61,11 @@
             background-color: #ffffff;
             color: #000000;
             line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img, svg {
+            max-width: 100%;
         }
 
         .animate-fade-in-up {
@@ -90,20 +95,20 @@
             top: 0;
             background: white;
             z-index: 100;
-            flex-wrap: wrap;
-            gap: 1rem;
         }
 
         .nav-brand {
             display: flex;
             align-items: center;
             gap: 1.5rem;
+            min-width: 0;
         }
 
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
             letter-spacing: -0.5px;
+            flex-shrink: 0;
         }
 
         .github-link {
@@ -116,6 +121,7 @@
             transition: all 0.2s;
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
+            white-space: nowrap;
         }
 
         .github-link:hover {
@@ -126,6 +132,7 @@
         nav ul {
             display: flex;
             list-style: none;
+            align-items: center;
             gap: 2rem;
             margin-left: auto;
         }
@@ -165,11 +172,25 @@
             text-decoration: none;
             font-size: 0.95rem;
             transition: all 0.3s;
+            display: inline-block;
+            white-space: nowrap;
         }
 
         .nav-cta:hover {
             background: #222;
             transform: translateY(-2px);
+        }
+
+        /* Mobile menu toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #000;
+            cursor: pointer;
+            padding: 0.4rem;
+            line-height: 1;
         }
 
         /* Hero Section */
@@ -254,6 +275,7 @@
             padding: 2rem;
             margin-top: 3rem;
             display: inline-block;
+            max-width: 100%;
             animation: slideInRight 1.6s ease-out;
         }
 
@@ -368,6 +390,7 @@
             color: #000;
             margin-bottom: 0.5rem;
             animation: pulse 2s ease-in-out infinite;
+            word-break: break-word;
         }
 
         .stat-label {
@@ -498,6 +521,7 @@
             padding: 2rem;
             border-radius: 0.5rem;
             border-left: 4px solid #000;
+            text-align: left;
         }
 
         .use-case-content p {
@@ -709,38 +733,92 @@
             display: flex;
         }
 
-        /* Responsive */
+        /* ===== Responsive ===== */
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        /* Mobile nav collapses behind hamburger */
         @media (max-width: 768px) {
             nav {
-                flex-wrap: wrap;
+                padding: 1rem 1.25rem;
+                position: relative;
             }
 
-            .nav-brand {
-                width: 100%;
-                justify-content: space-between;
+            .menu-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
             }
 
             nav ul {
-                gap: 1rem;
-                width: 100%;
-                justify-content: center;
-                order: 3;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                margin-left: 0;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                background: white;
+                border-bottom: 1px solid #e5e5e5;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: max-height 0.3s ease, opacity 0.2s ease;
             }
 
-            nav a {
-                font-size: 0.85rem;
+            nav ul.open {
+                max-height: 400px;
+                opacity: 1;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 1rem 1.25rem;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            nav ul li a::after {
+                display: none;
+            }
+
+            nav ul li:last-child a {
+                border-bottom: none;
+                padding: 0.75rem 1.25rem 1.25rem;
+            }
+
+            .nav-cta {
+                display: block;
+                text-align: center;
+                width: calc(100% - 2.5rem);
+                margin: 0.5rem auto 0;
+            }
+
+            .hero {
+                padding: 3.5rem 1.5rem;
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.4rem;
             }
 
             .hero p {
-                font-size: 1rem;
+                font-size: 1.05rem;
             }
 
             .button-group {
                 flex-direction: column;
+                width: 100%;
             }
 
             .btn {
@@ -752,60 +830,105 @@
                 font-size: 2rem;
             }
 
+            .comparison-item {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .comparison-item .arrow {
+                transform: rotate(90deg);
+                animation: none;
+            }
+
             .features-grid, .steps-container {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             }
 
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 1.5rem;
             }
 
             .footer-right {
                 text-align: center;
             }
+
+            .footer-links {
+                justify-content: center;
+            }
         }
 
+        /* Small phones */
         @media (max-width: 480px) {
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1rem;
-            }
-
             .nav-brand {
-                width: 100%;
-                flex-direction: column;
-                gap: 0.5rem;
-                align-items: center;
+                gap: 0.75rem;
             }
 
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-                text-align: center;
-                width: 100%;
+            .github-link span {
+                display: none;
+            }
+
+            .logo {
+                font-size: 1.25rem;
             }
 
             .hero {
-                padding: 3rem 1rem;
+                padding: 2.75rem 1rem;
             }
 
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.9rem;
+                letter-spacing: -0.5px;
             }
 
-            .comparison-item {
-                flex-direction: column;
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .comparison {
+                padding: 1.25rem;
+                width: 100%;
+            }
+
+            .story, .use-case, .stats, .features, .how-it-works, .download, .developer-section {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+
+            .story h2, .section-title {
+                font-size: 1.6rem;
+            }
+
+            .story-quote {
+                font-size: 1rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
                 gap: 1rem;
             }
 
-            .steps-container {
+            .stat-number {
+                font-size: 1.7rem;
+            }
+
+            .steps-container, .features-grid {
                 grid-template-columns: 1fr;
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
+            .developer-card {
+                padding: 2rem 1.25rem;
+            }
+
+            .developer-avatar {
+                width: 90px;
+                height: 90px;
+                font-size: 2.2rem;
+            }
+
+            .dev-link span {
+                font-size: 0.85rem;
             }
 
             .back-to-top {
@@ -813,6 +936,13 @@
                 right: 1rem;
                 width: 45px;
                 height: 45px;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 340px) {
+            .stats-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -828,7 +958,12 @@
                 <span>odafe32</span>
             </a>
         </div>
-        <ul>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+            <i class="fas fa-bars" id="menuIcon"></i>
+        </button>
+
+        <ul id="navLinks">
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#stats">Stats</a></li>
@@ -1067,6 +1202,47 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         });
 
+        // Mobile hamburger menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const menuIcon = document.getElementById('menuIcon');
+
+        function closeMenu() {
+            navLinks.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        }
+
+        function openMenu() {
+            navLinks.classList.add('open');
+            menuToggle.setAttribute('aria-expanded', 'true');
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-xmark');
+        }
+
+        menuToggle.addEventListener('click', () => {
+            if (navLinks.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Close mobile menu after tapping a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        // Collapse menu if resized back to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1091,7 +1267,7 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate-fade-in-up');
                     entry.target.style.opacity = '1';
-                    
+
                     // Trigger number counter for stat cards
                     if (entry.target.classList.contains('stat-card')) {
                         const statNum = entry.target.querySelector('.stat-number');
@@ -1109,21 +1285,21 @@
             const text = element.textContent;
             const hasPercent = text.includes('%');
             const hasArrow = text.includes('→');
-            
+
             if (hasArrow || hasPercent) {
                 // For "3GB → 300MB" or "90%" - just fade in
                 return;
             }
-            
+
             // For pure numbers like "3"
             const target = parseInt(text);
             if (isNaN(target)) return;
-            
+
             const duration = 1500;
             const start = 0;
             const increment = target / (duration / 16);
             let current = start;
-            
+
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
